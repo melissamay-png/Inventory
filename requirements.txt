@@ -1,0 +1,8 @@
+# AI Agent Dependencies
+python-dotenv==1.0.0
+requests==2.31.0
+
+# Optional: For enhanced AI capabilities
+# Uncomment if using external LLM APIs
+# openai==1.3.0
+# anthropic==0.7.0

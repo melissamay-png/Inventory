@@ -1,67 +1,41 @@
-Hospital Inventory Management System
+# AI Inventory Agent
 
-🏥 Overview
+An interactive inventory management system powered by an AI agent that processes natural language commands.
 
-This repository contains a simple Hospital Inventory Management System developed as part of the AI Agent Assignment. The project demonstrates how Python can be used to automate inventory tracking and management for hospital supplies using data stored in an Excel file.
+## Features
 
-📂 Project Structure
+- 📦 **Add/Remove Items** - Manage inventory items dynamically
+- 🔍 **Search & Filter** - Find items by name, category, or quantity
+- 🤖 **AI Agent** - Natural language interface for inventory operations
+- 💾 **Persistent Storage** - Save inventory to JSON
+- 📊 **Reporting** - Generate inventory reports
 
-Hospital Inventory.xlsx — The main dataset containing hospital inventory details such as item names, quantities, and categories.
+## Setup
 
-inventory_program.py — A Python script that connects to the Excel file and performs operations like reading, updating, and analyzing inventory data.
+```bash
+pip install -r requirements.txt
+```
 
-⚙️ Technologies Used
+## Usage
 
-Python 3.x
+```bash
+python main.py
+```
 
-Pandas — For data manipulation and analysis.
+Then interact with the agent using natural language:
+- "Add 5 apples to inventory"
+- "How many items do we have?"
+- "Show me everything in the produce category"
+- "Remove 2 oranges"
 
-Streamlit (optional) — For building an interactive web interface.
+## Project Structure
 
-Excel (.xlsx) — For structured data storage.
-
-🚀 How to Run
-
-Clone the repository:
-
-git clone https://github.com/melissamay-png/Inventory.git
-
-Navigate to the project directory:
-
-cd Inventory
-
-Install dependencies:
-
-pip install pandas streamlit openpyxl
-
-Run the Python script:
-
-python inventory_program.py
-
-(Optional) Launch the Streamlit app:
-
-streamlit run inventory_program.py
-
-💡 Features
-
-Reads and displays inventory data from Excel.
-
-Allows updates to item quantities and details.
-
-Can be extended to include alerts for low stock levels.
-
-Optional Streamlit interface for user-friendly interaction.
-
-📈 Future Improvements
-
-Add AI-based predictions for supply needs.
-
-Integrate with hospital databases for real-time updates.
-
-Include user authentication and role-based access.
-
-👩‍💻 Author
-
-Melissa May — Developer and creator of the Hospital Inventory Management System.
-
-This project is part of the AI Agent Assignment and demonstrates practical use of Python for inventory automation.
+```
+.
+├── main.py                 # Entry point
+├── inventory.py            # Inventory management
+├── agent.py                # AI agent logic
+├── commands.py             # Command handlers
+├── requirements.txt        # Dependencies
+└── inventory_data.json     # Persistent storage
+```
